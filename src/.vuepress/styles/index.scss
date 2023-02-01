@@ -1,0 +1,38 @@
+// place your custom styles here
+.hero-image {
+  width: 80vw;
+}
+.blog-hero h1 {
+  color: #fff;
+}
+.description {
+  // color: #000;
+}
+
+// 隐藏滚动条
+// webkit内核
+body::-webkit-scrollbar {
+  display: none;
+}
+// IE10+
+body {
+  -ms-overflow-style: none;
+}
+// firefox
+html {
+  scrollbar-width: none;
+}
+
+// 更改footer布局
+.footer-wrapper {
+  flex-direction: column;
+}
+
+.blog-hero .mask::after {
+  opacity: 0.1 !important;
+}
+
+// 修改主页侧边栏logo大小
+.blogger-info .blogger-avatar {
+border-radius: 10px;
+}
