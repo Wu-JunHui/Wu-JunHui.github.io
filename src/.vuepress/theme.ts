@@ -3,7 +3,7 @@ import { enNavbar, zhNavbar } from './navbar/index.js'
 import { enSidebar, zhSidebar } from './sidebar/index.js'
 
 export default hopeTheme({
-  // hostname: 'https://mister-hope.github.io',当前网站部署到的域名
+  hostname: 'https://wu-junhui.github.io/',
 
   author: {
     name: 'Wu-JunHui'
