@@ -8,12 +8,12 @@ export default defineUserConfig({
     '/': {
       lang: 'zh-CN',
       title: 'OUTOFF ORBIT',
-      // description: 'vuepress-theme-hope 的博客演示'
+      description: '前端技术经验分享、个人生活博客'
     },
     '/en/': {
       lang: 'en-US',
       title: 'OUTOFF ORBIT',
-      // description: 'A blog demo for vuepress-theme-hope'
+      description: 'A blog about my life and front-end'
     }
   },
 

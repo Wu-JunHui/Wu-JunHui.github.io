@@ -35,6 +35,11 @@ export const zhNavbar = navbar([
         link: '/category/browser/'
       },
       {
+        text: 'Git',
+        icon: 'git',
+        link: '/category/git/'
+      },
+      {
         text: '查看所有',
         icon: 'storage',
         link: '/article/'

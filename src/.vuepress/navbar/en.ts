@@ -35,6 +35,11 @@ export const enNavbar = navbar([
         link: '/category/browser/'
       },
       {
+        text: 'Git',
+        icon: 'git',
+        link: '/category/git/'
+      },
+      {
         text: 'All',
         icon: 'storage',
         link: '/article/'

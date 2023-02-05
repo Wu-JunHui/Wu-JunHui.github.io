@@ -3,6 +3,7 @@ import { sidebar } from 'vuepress-theme-hope'
 export const zhSidebar = sidebar({
   '/': [
     // "", 空字符串表示主页链接
+    // 侧边栏只能手动设置当前结构，读取项目目录时只能按默认字母排序
     {
       text: 'HTML',
       icon: 'html',
@@ -37,6 +38,13 @@ export const zhSidebar = sidebar({
       prefix: '技术博文/browser/',
       children: 'structure',
       collapsible: true
-    }
+    },
+    {
+      text: 'Git',
+      icon: 'git',
+      prefix: '技术博文/Git/',
+      children: 'structure',
+      collapsible: true
+    },
   ]
 })

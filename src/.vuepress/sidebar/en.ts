@@ -36,6 +36,13 @@ export const enSidebar = sidebar({
       prefix: 'blogs/browser/',
       children: 'structure',
       collapsible: true
+    },
+    {
+      text: 'Git',
+      icon: 'git',
+      prefix: 'blogs/Git/',
+      children: 'structure',
+      collapsible: true
     }
   ]
 })
