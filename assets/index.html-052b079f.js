@@ -1,0 +1,1 @@
+import{_ as t,V as a,W as n,Z as e,$ as s}from"./framework-c857ca25.js";const c={},o=e("h2",{id:"工作经历",tabindex:"-1"},[e("a",{class:"header-anchor",href:"#工作经历","aria-hidden":"true"},"#"),s(" 工作经历")],-1),r=e("p",null,"blablabla",-1),_=[o,r];function d(l,i){return a(),n("div",null,_)}const f=t(c,[["render",d],["__file","index.html.vue"]]);export{f as default};

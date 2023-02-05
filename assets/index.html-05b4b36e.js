@@ -1,0 +1,1 @@
+import{_ as e,o as t,V as o,W as c}from"./framework-c857ca25.js";const n={setup(){t(()=>{document.querySelector(".social-media:first-child")})}};function s(r,a,i,_,d,l){return o(),c("div")}const u=e(n,[["render",s],["__file","index.html.vue"]]);export{u as default};
