@@ -10,4 +10,4 @@ article: false
 
 <!-- 均发布在 GITHub 仓库中 -->
 
-<SiteInfo name="购物商城" url="https://mrhope.site" desc="基于Vue开发的购物商城" preview="https://theme-hope.vuejs.press/assets/image/mrhope.jpg" />
+<SiteInfo name="购物商城" url="https://w-junhui.gitee.io/weather-forecast" desc="基于Vue开发的购物商城" preview="https://theme-hope.vuejs.press/assets/image/mrhope.jpg" />
