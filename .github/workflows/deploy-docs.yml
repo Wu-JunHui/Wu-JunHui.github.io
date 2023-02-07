@@ -5,7 +5,7 @@ name: Deploy my blog
 on:
   push:
     branches:
-      # 确保这是你正在使用的分支名称
+      # 指定通过push触发工作流时的分支
       - main
 
 # jobs 表示将当前“部署文档”工作流的所有任务分组在一起，并定义一个名为 deploy-gh-pages 的任务
@@ -30,22 +30,33 @@ jobs:
           node-version: 18
           cache: npm
 
-      - name: 安装依赖
+      - name: Install Dependencies
         # run 表示告诉任务在运行器上执行一个命令
         # npm ci 类似于 npm-install ，但它旨在用于自动化环境，如测试平台，持续集成和部署，比常规安装更严格，项目中必须有package-lock.json
         run: npm ci
 
-      - name: 构建文档
+      - name: Build docs
         env:
           NODE_OPTIONS: --max_old_space_size=8192
         run: |-
           npm run docs:build
           > src/.vuepress/dist/.nojekyll
 
-      - name: 部署文档
+      - name: Deploy docs
         uses: JamesIves/github-pages-deploy-action@v4
         with:
-          # 这是文档部署到的分支名称
+          # 设置部署文档所在的分支名称
           branch: gh-pages
           # 所部署文档的目录
           folder: src/.vuepress/dist
+
+      - name: Sync repo to Coding
+        uses: wearerequired/git-mirror-action@v1
+        env:
+          # 在 仓库->Settings->Secrets->Actions 配置私钥，供actions访问github和coding仓库
+          SSH_PRIVATE_KEY: ${{ secrets.GITEE_ED25519_PRIVATE_KEY }}
+        with:
+          # 注意替换为你的 GitHub 源仓库地址
+          source-repo: git@github.com:Wu-JunHui/Wu-JunHui.github.io.git
+          # 注意替换为你的 Gitee 目标仓库地址
+          destination-repo: git@e.coding.net:wu-junhui/personal-blog/blog.git

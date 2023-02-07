@@ -202,10 +202,11 @@ ssh-keygen -t ed25519 -C "your_email@example.com"
    :::
 
 该命令执行分为**三个步骤**：  
-（1）`第一次`回车运行命令，终端提示键入密匙文件的保存路径，可**直接回车**使用默认保存路径：<code>c/Users/Administrator/.ssh/id_ed25519</code>
+（1）`第一次`回车运行命令，终端提示键入将要保存的密匙文件名，可**直接回车**使用默认名字：<code>c/Users/Administrator/.ssh/id_ed25519</code>
 
 ::: tip
-若之前已生成过 SSH 密匙，此处终端会要求将密匙保存至非默认路径，若为首次创建，使用默认保存路径即可
+若之前已生成过 SSH 密匙，再次生成**相同算法**的密匙时，直接回车使用默认密匙名会提示是否覆盖已有的密匙文件：键入 `y` 即表示覆盖，键入 `n` 则直接退出生成命令  
+因此若需要生成**多个** SSH 密匙，必须在当前步骤命名密匙文件
 :::
 
 （2）`第二次`回车选择保存路径后，终端提示键入使用 SSH 密匙的安全密码，可**直接回车**表示不使用
@@ -235,7 +236,7 @@ ssh-keygen -t ed25519 -C "your_email@example.com"
 
 因此，可通过以下两种方法获取 <code>SSH 公钥</code>：
 
-（1）在 SSH 密匙默认保存路径 `C:\Users\Administrator\.ssh` 下，通过**记事本**打开 <code>id_ed25519.pub</code> 公钥文件，复制公钥内容  
+（1）在 SSH 密匙默认保存路径 `C:\Users\Administrator\.ssh` 下，通过**记事本**或 **VSCode** 打开 <code>id_ed25519.pub</code> 公钥文件，复制公钥内容  
 （2）打开 <code>Git Bash</code> 终端，执行如下命令来直接查看和复制公钥内容：
 
 ```bash
@@ -249,6 +250,11 @@ cat ~/.ssh/id_ed25519.pub
 2. 在 SSH key 添加页面中：  
 （1）在 <code>Title</code> 文本框中自定义 Key 的名称，来标识这个 key 从何而来  
 （2）将上一步复制的 **SSH 公钥** 粘贴到 <code>Key</code> 文本框后，即可点击 <code>Add SSH key</code>按钮添加 SSH 密匙  
+
+ :::info 命名 key
+ 假如你有命名困难症，可参考如下命名规则：**平台名_算法名_key类型**  
+ 例如：`GITHUB_ED25519_PUBLIC`、`GITEE_RSA_PUBLIC`
+ :::  
 3. 此时页面跳转至 GitHub 账号密码输入页面，以确保操作安全性，输入后则成功添加公钥
 
 **Gitee**：  
