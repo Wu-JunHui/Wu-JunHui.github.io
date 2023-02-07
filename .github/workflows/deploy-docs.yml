@@ -54,7 +54,7 @@ jobs:
         uses: wearerequired/git-mirror-action@v1
         env:
           # 在 仓库->Settings->Secrets->Actions 配置私钥，供actions访问github和coding仓库
-          SSH_PRIVATE_KEY: ${{ secrets.GITEE_ED25519_PRIVATE_KEY }}
+          SSH_PRIVATE_KEY: ${{ secrets.CODING_ED25519_PRIVATE_KEY }}
         with:
           # 注意替换为你的 GitHub 源仓库地址
           source-repo: git@github.com:Wu-JunHui/Wu-JunHui.github.io.git
