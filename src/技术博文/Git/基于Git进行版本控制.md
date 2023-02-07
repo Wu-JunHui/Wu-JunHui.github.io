@@ -125,7 +125,7 @@ git status
 （3）当前未被 Git 跟踪的文件列表（Untracked files）  
 （4）提示当前暂存区未有任何文件可提交
 
-![](/articles/statusReport1.png)
+![](/articles/statusReport1.webp)
 
 由于是刚初始化的仓库，因此所有文件都是**未跟踪**状态（<span style="color:#d42c2a">文件名为红色</span>），在确认文件无误后即可执行以下终端命令，表示跟踪**所有文件**并加入暂存区
 
@@ -139,7 +139,7 @@ git add .
 
 再次执行终端命令 <code>git status</code>，会发现所有文件都已加入至暂存区（<span style="color:#109100">文件名为绿色</span>）
 
-![](/articles/statusReport2.png)
+![](/articles/statusReport2.webp)
 
 ### 4. 提交至本地仓库
 
@@ -308,10 +308,10 @@ ssh -T git@gitee.com
 
 @tab GitHub
 
-![](/articles/github.png)
+![](/articles/github.webp)
 
 @tab Gitee
-![](/articles/gitee.png)
+![](/articles/gitee.webp)
 
 :::
 

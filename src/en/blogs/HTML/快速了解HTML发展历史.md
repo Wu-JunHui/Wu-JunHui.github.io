@@ -146,4 +146,4 @@ YouTube 彻底抛弃了 Flash，实现向 HTML 5 的全面过渡
 指的是 HTMl 5 本身 + CSS3 + JavaScript，这个集合有时称为 HTML 5 和朋友，通常缩写为 HTML 5，虽然 HTML 5 的一些特性仍然不被某些浏览器支持，但它依然是一种发展趋势，若想了解更多，可参考 MDN 的[学习指南](https://developer.mozilla.org/zh-CN/docs/Learn/HTML)
 :::
 
-![HTML 发展历史](/articles/HTML历史.png)
+![HTML 发展历史](/articles/HTML历史.webp)
