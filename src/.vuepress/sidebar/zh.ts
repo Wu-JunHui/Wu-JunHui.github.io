@@ -21,7 +21,7 @@ export const zhSidebar = sidebar({
     {
       text: 'JavaScript',
       icon: 'javascript',
-      prefix: '技术博文/JS/',
+      prefix: '技术博文/JavaScript/',
       children: 'structure',
       collapsible: true
     },

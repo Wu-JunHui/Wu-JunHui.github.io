@@ -19,7 +19,7 @@ export const enSidebar = sidebar({
     {
       text: 'JavaScript',
       icon: 'javascript',
-      prefix: 'blogs/JS/',
+      prefix: 'blogs/JavaScript/',
       children: 'structure',
       collapsible: true
     },
