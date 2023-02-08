@@ -7,7 +7,7 @@ tag:
   - 版本控制
 ---
 
-# 基于 Git 进行版本控制
+# 基于 Git 的版本控制基本流程 
 
 ## 前言
 
@@ -134,10 +134,11 @@ git add .
 ```
 
 ::: info 命令说明
-<code>git add .</code>（英文句号）是开发中常用的命令，它表示一次性将所有新增的和修改过的文件加入暂存区，适用于工作区中需被暂存的文件个数较多的时候
+<code>git add .</code>（英文句号）是开发中常用的命令，它表示一次性将所有新增的和修改过的文件加入暂存区，适用于工作区中需被暂存的文件个数较多的时候  
+你也可以单独将某个文件加入暂存区，例如 `git add index.html`
 :::
 
-再次执行终端命令 <code>git status</code>，会发现所有文件都已加入至暂存区（<span style="color:#109100">文件名为绿色</span>）
+执行完命令后终端不会有任何提示信息，此时再次执行终端命令 <code>git status</code>，会发现所有文件都已加入至暂存区（<span style="color:#109100">文件名为绿色</span>）
 
 ![](/articles/statusReport2.webp)
 
@@ -153,9 +154,11 @@ git commit -m "init project"
 <code>git commit</code> 命令表示进行提交操作，<code>-m</code> 选项后是本次的提交消息，用于对本次提交的内容进行描述，如初始化项目（init project）
 :::
 
-执行命令成功后，终端会报告本次提交的文件数量等信息
+执行命令成功后，终端会报告本次提交中：
+- `数字 file changed`：被改动的文件数量（添加或修改的文件数量）
+- `数字 insertions`：表示在上述文件内插入新内容的行数
 
-此时再次执行终端命令 <code>git status</code>，终端会提示当前处于 master 主分支，<code>Nothing to commit, working tree clean</code>，表明工作区中所有的文件都处于`“未修改”`的状态，没有任何文件需要被提交
+此时再次执行终端命令 <code>git status</code>，终端会提示当前处于 master 主分支，<code>Nothing to commit, working tree clean</code>，表明工作区中所有的文件都处于`“未修改”`的状态，即没有对工作区的任何文件进行任何修改，没有任何文件需要被提交
 
 ::: tip 查看提交日志
 在进行一次本地提交后，可运行终端命令 `git log` 来查看所有的本地提交记录
@@ -284,7 +287,7 @@ ssh -T git@gitee.com
 
 :::
 
-回车执行命令后，终端提示是否继续建立与 GitHub/Gitee 的连接，输入 `yes` 后若显示以 `You've successfully` 开头的相关信息则表示 SSH 公钥配置成功，此时可通过 **SSH 协议**将本地仓库的项目代码推送到 GitHub 或 Gitee 的远程仓库上
+回车执行命令后，终端提示是否继续建立与 GitHub/Gitee 的连接，输入 `yes` 后若显示以 `You've successfully` 开头的相关信息则表示 SSH 公钥配置成功，此时即可通过 **SSH 协议**将本地仓库的项目代码推送到 GitHub 或 Gitee 的远程仓库上
 
 添加 host 成功后，在存放公钥的 `.ssh/` 目录下，文件 `known_hosts` 就会记录已被本地识别的**主机信息**及对应的公钥
 
@@ -439,6 +442,7 @@ git branch -d search
 # 确认当前已无本地分支 search
 git branch
 ```
-## 总结
 
-上述只是最基本的基于 Git 进行版本控制，要深入学习更多的 Git 相关的知识或命令，可参考 [Git 官网](https://git-scm.com/docs)
+## 参考
+[Git 软件教程](https://mrhope.site/software/git/)（由 vuepress-theme-hope 主题作者编写）  
+[Git 官网指南](https://git-scm.com/docs)
