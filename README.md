@@ -28,7 +28,7 @@ hr {
 </style>
 
 ## 我的第一个博客
-![](/logo.svg)
+![](/src/.vuepress/public/bgPic.webp)
 ## 开发模式
 ## 部署博客
 ## 静态资源
