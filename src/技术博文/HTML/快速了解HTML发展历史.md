@@ -183,20 +183,22 @@ YouTube 彻底抛弃了 Flash，实现向 HTML 5 的全面过渡
 
 此次更新增加了 `<dialog>` 标签等新功能，弃用了 HTML 插件系统等原有功能，并整合了其他 W3C 委员会的进展，如对支付请求 API（Payment Request API）和演示 API（Presentation API）的支持
 
-### 2019 年 5 月 28 日：W3C 与 WHATWG签署合作备忘录
+### 2019 年 5 月 28 日：W3C 与 WHATWG 签署合作备忘录
 
 W3C 与 WHATWG 经过协商现最终签署了一份[《合作备忘录》](https://www.w3.org/2019/04/WHATWG-W3C-MOU.html)作为双方认可合作模式，继而共同开发**统一版本**的 HTML 与 DOM 规范
 
 ::: info 了解更多
+
 - [W3C 官网新闻](https://www.w3.org/blog/2019/05/w3c-and-whatwg-to-work-together-to-advance-the-open-web-platform/)，[W3C 中国官网新闻](https://www.chinaw3c.org/blog-w3c-and-whatwg-to-work-together-to-advance-the-open-web-platform.html)
 - W3C 组织的 GitHub 仓库：[whatwg-coord](https://github.com/w3c/whatwg-coord)，了解两个组织更多的合作内容
-:::
+  :::
 
 ### 2021 年 1 月 28 日：蜕变！新的 HTML 标准
 
 早在 2011 年 1 月 19 日，Google 工程师兼 HTML 5 标准编辑的 Ian Hickson 就通过 WHATWG 组织官网的博客向外发布了一篇文章 [HTML is the new HTML5](https://blog.whatwg.org/html-is-the-new-html5)
 
-文中他提到，在最初制定 HTML 5 草案接近尾声时，就认识到人们对于增加 HTML 新功能的需求一直在高涨，因此他们那时就决定，在 HTML 5 发展至能真正称为 HTML 5 时，转换 HTML 的发展模式：  
+文中他提到，在最初制定 HTML 5 草案接近尾声时，就认识到人们对于增加 HTML 新功能的需求一直在高涨，因此他们那时就决定，在 HTML 5 发展至能真正称为 HTML 5 时，转换 HTML 的发展模式：
+
 - 不再遵循规范的发展模式，即不再发布版本号，而是征求意见、征求实现等等
 - HTML 标准将只被称为 **“HTML”**，且通过该网址随时维护：https://html.spec.whatwg.org/multipage/
 
@@ -206,7 +208,7 @@ W3C 与 WHATWG 经过协商现最终签署了一份[《合作备忘录》](https
 
 ### 广义的 HTML 5
 
-广义的 HTML 5 表示一系列的现代 Web 技术：HTMl 5 + CSS 3 + JavaScript，这个集合有时称为 HTML 5 和朋友，通常缩写为 HTML 5  
+广义的 HTML 5 表示一系列的现代 Web 技术：HTMl 5 + CSS 3 + JavaScript，这个集合有时称为 HTML 5 和朋友，通常缩写为 HTML 5
 
 ## 总结
 
@@ -214,11 +216,10 @@ W3C 与 WHATWG 经过协商现最终签署了一份[《合作备忘录》](https
 
 在 HTML 发展历史中，最广为人知的就是 HTML 3.2 和 HTML 4.01。而沿用至今的 HTML 5 将 Web 带入一个成熟的应用平台，在这个平台上，视频、音频、图像、动画以及与设备的交互都进行了规范，虽然 HTML 5 的一些特性仍然不被某些浏览器支持，但它依然是一种 Web 未来的**发展趋势**
 
-
 ![HTML 发展历史](/articles/html/HTML历史.webp)
 
 ## 参考
-  
+
 [W3C：HTML 5 简介](https://www.w3school.com.cn/html/html5_intro.asp)  
 [W3C：HTML 5 规范发布活动](https://www.w3school.com.cn/w3c/w3c_html.asp)  
 [HTML 活规范（英文版）](https://html.spec.whatwg.org/multipage/)  
@@ -226,7 +227,3 @@ W3C 与 WHATWG 经过协商现最终签署了一份[《合作备忘录》](https
 [查找 W3C 制定的所有规范](https://www.w3.org/TR/)  
 [MDN：HTML 参考](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Reference)（通常与最新的 HTML 5 规范同步更新）  
 [菜鸟教程 HTML 5 元素参考手册](https://www.runoob.com/tags/html-reference.html)
-
-
-
-
