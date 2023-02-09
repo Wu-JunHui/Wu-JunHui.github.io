@@ -50,6 +50,14 @@ jobs:
           # 所部署文档的目录
           folder: src/.vuepress/dist
 
+      - name: Copy baidu-verify file
+        uses: canastro/copy-file-action@master
+        with:
+          # 源文件目录
+          source: baidu_verify_codeva-p5FuxDFHWV.html
+          # 目标目录
+          target: src/.vuepress/dist/baidu_verify_codeva-p5FuxDFHWV.html
+
       - name: Sync repo to Gitee
         uses: wearerequired/git-mirror-action@v1
         env:

@@ -1,11 +1,21 @@
+<div align=center>
+
 <img width="240" src="/src/.vuepress/public/logo.svg" >
 
-# <center>OUTOFF ORBIT</center>
+</div>
+
+<div align=center>
+
+# OUTOFF ORBIT
+
+</div>
 
 ---
 
 ## My first blog
-![](/src/.vuepress/public/English.webp)
+
+![Home page](/src/.vuepress/public/English.webp)
+
 This is my first blog website based on VuePress 2. And I start it by applying a VuePress theme called [VuePress Theme Hope](https://theme-hope.vuejs.press/zh/). It's maintained by one of the group members of VuePress Project. Here is his [personal website](https://mrhope.site/).
 
 ## Start Dev mode
@@ -23,17 +33,17 @@ In order to make my blog as faster as possible, all pictures are using the `.web
 
 ---
 
-
-
 ## 我的第一个博客
 
-![](/src/.vuepress/public/Chinese.webp)
+![博客主页](/src/.vuepress/public/Chinese.webp)
 
 部署于 GitHub pages: https://outofforbit.com
 
 部署于 Gitee pages: https://w-junhui.gitee.io
 
 基于 VuePress 2 搭建的个人博客，应用了主题 [VuePress Theme Hope](https://theme-hope.vuejs.press/zh/)，该主题由 VuePress 项目作者维护，这是他的 [个人网站](https://mrhope.site/)
+
+out off orbit，翻译为脱离轨道，是因为 out of orbit 的 com 域名被注册了，只好选择同义的 off，如果换一种断句，你会发现 out of forbit，不受限制的，也是符合我的博客理念
 
 ## 开发模式
 
@@ -46,6 +56,13 @@ npm run dev
 npm run dev-clean
 ```
 
+## 自定义开发
+
+参考官方文档，注意，默认的根路径解析的是英文，我的博客已替换为中文，步骤供参考
+
+1. 创建 zh/
+2. 修改
+
 ## 部署博客
 
 在完成自定义开发后，即可部署博客。
@@ -57,10 +74,12 @@ GitHub Actions 是一个持续集成 (Continuous integration)和持续交付 (Co
 :::
 
 ### 部署至 GitHub pages
+
 主题 [vuepress-theme-hope](https://github.com/vuepress-theme-hope/vuepress-theme-hope) 通过 GitHub Actions，提供了部署至 GitHub pages 的便捷功能，需确保符合以下要求：
 
 1. 确保在创建 vuepress-theme-hope 项目时勾选了创建自动部署文档的 GitHub 工作流
 2. GitHub pages 分为个人页面与项目页面：
+
 - 个人页面：如果你期望最终部署的网址为 `https://GitHub用户名.github.io/`，则必须将整个项目上传至 `https://github.com/GitHub用户名/GitHub用户名.github.io`，这意味着你在创建仓库时，仓库名必须为这种形式：`GitHub用户名.github.io`，每个 GitHub 账号只能部署一个个人页面
 
 - 项目页面：不同于个人页面，没有数量限制，在创建仓库时随意命名，例如 `mysoul`，则在项目中需要在 config.ts 中配置好 base 选项，它表示项目部署的根路径，必须以 `/` 开头和结束，例如：`/mysoul/`，注意路径名必须与仓库名一致，包括大小写
@@ -84,6 +103,18 @@ GitHub Actions 可粗略地理解为一个执行程序的平台，当你为项�
 5. 部署文档至 GitHub pages
 6. 同步当前仓库代码到 Gitee
 7. 部署文档至 Gitee pages
+
+### 其他问题
+
+#### 自定义域名
+
+域名的作用除了好看，DNS 解析就是指向部署服务器，如果指向国外，那么这个域名就不需要备案，但如果是国内，无论是 Gitee、腾讯云还是阿里云，就必须进行备案，而域名备案则要求提供 ICP 备案服务码，这是由服务器提供的，如果你没有服务器，也可以直接购买 ICP 备案服务器，据我了解阿里云的是 ￥ 100 一个，其他平台估计也不会便宜，当然你也可以去其他平台，闲鱼购买几块的，但这个风险我就不愿意承担了，备案后域名指向若不是服务器，会被审查，
+
+Gitee pages 不提供自定义域名，在 2021 年就已经停止提供个人购买护院，
+腾讯云可自定义域名，但部署在那里必须开通按需扣费的流量，
+阿里云我暂时没了解部署静态网站的事项
+假设你已经有一个实名认证的域名，在成功
+
 ### 参考：
 
 [vuepress-theme-hope/部署项目](https://theme-hope.vuejs.press/zh/cookbook/tutorial/deploy.html)
@@ -99,4 +130,3 @@ hr {
   border-width: 3px 0 0 0 !important;
   }
 </style>
-
