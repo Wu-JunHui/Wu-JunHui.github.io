@@ -33,7 +33,7 @@ jobs:
       - name: Install Dependencies
         # run 表示告诉任务在运行器上执行一个命令
         # npm ci 类似于 npm-install ，但它旨在用于自动化环境，如测试平台，持续集成和部署，比常规安装更严格，项目中必须有package-lock.json
-        # run: npm ci
+        run: npm ci
 
       - name: Build docs
         env:
@@ -46,7 +46,7 @@ jobs:
         uses: canastro/copy-file-action@master
         with:
           # 源文件目录
-          source: baidu_verify_codeva-p5FuxDFHWV.html
+          # source: baidu_verify_codeva-p5FuxDFHWV.html
           # 目标目录
           target: src/.vuepress/dist/baidu_verify_codeva-p5FuxDFHWV.html
 
