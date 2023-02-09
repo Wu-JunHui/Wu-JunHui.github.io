@@ -40,6 +40,11 @@ export const zhNavbar = navbar([
         link: '/category/git/'
       },
       {
+        text: 'VuePress',
+        icon: 'valine',
+        link: '/category/vuepress/'
+      },
+      {
         text: '查看所有',
         icon: 'storage',
         link: '/article/'

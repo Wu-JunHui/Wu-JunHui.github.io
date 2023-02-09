@@ -215,14 +215,14 @@ W3C 与 WHATWG 经过协商现最终签署了一份[《合作备忘录》](https
 在 HTML 发展历史中，最广为人知的就是 HTML 3.2 和 HTML 4.01。而沿用至今的 HTML 5 将 Web 带入一个成熟的应用平台，在这个平台上，视频、音频、图像、动画以及与设备的交互都进行了规范，虽然 HTML 5 的一些特性仍然不被某些浏览器支持，但它依然是一种 Web 未来的**发展趋势**
 
 
-![HTML 发展历史](/articles/HTML历史.webp)
+![HTML 发展历史](/articles/html/HTML历史.webp)
 
 ## 参考
   
 [W3C：HTML 5 简介](https://www.w3school.com.cn/html/html5_intro.asp)  
 [W3C：HTML 5 规范发布活动](https://www.w3school.com.cn/w3c/w3c_html.asp)  
 [HTML 活规范（英文版）](https://html.spec.whatwg.org/multipage/)  
-[HTML 活规范（中文版）](https://whatwg-cn.github.io/html/)（中文译版暂未与英文原版同步，建议查阅英文原版）
+[HTML 活规范（中文版）](https://whatwg-cn.github.io/html/)（中文译版暂未与英文原版同步，建议查阅英文原版）  
 [查找 W3C 制定的所有规范](https://www.w3.org/TR/)  
 [MDN：HTML 参考](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Reference)（通常与最新的 HTML 5 规范同步更新）  
 [菜鸟教程 HTML 5 元素参考手册](https://www.runoob.com/tags/html-reference.html)

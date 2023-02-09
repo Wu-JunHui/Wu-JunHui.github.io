@@ -92,6 +92,7 @@ GitHub Actions 可粗略地理解为一个执行程序的平台，当你为项�
 5. 部署文档至 GitHub pages
 6. 同步当前仓库代码到 Gitee
 7. 部署文档至 Gitee pages
+
 ### 参考：
 
 [vuepress-theme-hope/部署项目](https://theme-hope.vuejs.press/zh/cookbook/tutorial/deploy.html)

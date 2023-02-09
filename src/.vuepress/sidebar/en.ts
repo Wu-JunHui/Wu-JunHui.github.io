@@ -43,6 +43,13 @@ export const enSidebar = sidebar({
       prefix: 'blogs/Git/',
       children: 'structure',
       collapsible: true
-    }
+    },
+    {
+      text: 'VuePress',
+      icon: 'valine',
+      prefix: 'blogs/VuePress/',
+      children: 'structure',
+      collapsible: true
+    },
   ]
 })

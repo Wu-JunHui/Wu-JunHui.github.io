@@ -35,7 +35,7 @@ export const zhSidebar = sidebar({
     {
       text: '浏览器',
       icon: 'chrome',
-      prefix: '技术博文/browser/',
+      prefix: '技术博文/Browser/',
       children: 'structure',
       collapsible: true
     },
@@ -43,6 +43,13 @@ export const zhSidebar = sidebar({
       text: 'Git',
       icon: 'git',
       prefix: '技术博文/Git/',
+      children: 'structure',
+      collapsible: true
+    },
+    {
+      text: 'VuePress',
+      icon: 'valine',
+      prefix: '技术博文/VuePress/',
       children: 'structure',
       collapsible: true
     },

@@ -40,6 +40,11 @@ export const enNavbar = navbar([
         link: '/category/git/'
       },
       {
+        text: 'VuePress',
+        icon: 'valine',
+        link: '/category/vuepress/'
+      },
+      {
         text: 'All',
         icon: 'storage',
         link: '/article/'
