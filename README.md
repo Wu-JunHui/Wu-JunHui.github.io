@@ -95,15 +95,18 @@ GitHub Actions 可粗略地理解为一个执行程序的平台，当你为项�
 ### 参考：
 
 [vuepress-theme-hope/部署项目](https://theme-hope.vuejs.press/zh/cookbook/tutorial/deploy.html)
-
+复制文件actions：https://github.com/marketplace/actions/copy-file
 ## 静态资源
 
 为尽可能提升博客的访问与运行速度，博客中的图片均使用 `.webp` 格式，而类似于 logo 的小图标则使用 `.svg` 格式
 
 由于博客目前暂未有大量图片的管理需求，因此暂未使用图床（图片管理系统）
 
-<style>
-hr {
-  border-width: 3px 0 0 0 !important;
-  }
-</style>
+## 联系我
+
+如果对该仓库的代码有任何疑问，可通过邮箱联系我：wu-junhui@foxmail.com  
+或者你也可以创建一个 [Issues](https://github.com/Wu-JunHui/Wu-JunHui.github.io/issues)
+
+## 开源许可
+
+[MIT](/LICENSE)
