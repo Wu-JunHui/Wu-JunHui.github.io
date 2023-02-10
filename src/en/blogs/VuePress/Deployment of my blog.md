@@ -4,12 +4,12 @@ date: 2023-02-03
 category:
   - VuePress
 tag:
-  - 部署
+  - Deployment
   - GitHub Pages
   - Gitee Pages
 ---
 
-# 我的博客部署之路
+# Deployment of my blog
 
 ## 概述
 
