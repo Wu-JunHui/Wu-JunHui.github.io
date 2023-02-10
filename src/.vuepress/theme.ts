@@ -126,10 +126,10 @@ export default hopeTheme({
     comment: {
       // 使用Giscus评论系统
       provider: 'Giscus',
-      repo: 'vuepress-theme-hope/giscus-discussions',
-      repoId: 'R_kgDOG_Pt2A',
+      repo: 'Wu-JunHui/giscus-comments',
+      repoId: 'R_kgDOI8R7Cg',
       category: 'Announcements',
-      categoryId: 'DIC_kwDOG_Pt2M4COD69'
+      categoryId: 'DIC_kwDOI8R7Cs4CUHzw'
     },
 
     // 主题提供的Markdown语法加强
