@@ -40,7 +40,7 @@ npm run dev-clean
 
 With the magic power of [GitHub Actions](https://docs.github.com/zh/actions), the blog can be deployed to [GitHub Pages](https://docs.github.com/zh/pages) and [Gitee Pages](https://gitee.com/help/articles/4136#article-header0) automatically once it's built. In other words, you don't have to run the script command(npm run docs:build) with your bare hand, but adding some simple steps in the workflow file by using the GitHub Actions.
 
-For more details of deployment, you can visit my blog [Deployment of my blog](https://w-junhui.gitee.io/%E6%8A%80%E6%9C%AF%E5%8D%9A%E6%96%87/VuePress/%E6%88%91%E7%9A%84%E5%8D%9A%E5%AE%A2%E9%83%A8%E7%BD%B2%E4%B9%8B%E8%B7%AF.html)
+For more details of deployment, you can visit my blog [Deployment of my blog](https://w-junhui.gitee.io/%E6%8A%80%E6%9C%AF%E5%8D%9A%E6%96%87/VuePress/%E6%88%91%E7%9A%84%E5%8D%9A%E5%AE%A2%E9%83%A8%E7%BD%B2%E4%B9%8B%E8%B7%AF.html)  
 CSDN：[我的 VuePress 博客部署之路](https://blog.csdn.net/INT_FUTURE/article/details/128975977)
 
 > GitHub Actions is a platform for continuous integration and continuous delivery. If you're not familiar with GitHub Actions, see if [this article](https://github.com/mqyqingfeng/Blog/issues/237) or [GitHub Actions official guide](https://docs.github.com/en/actions/learn-github-actions/understanding-github-actions) can help you understand it.
@@ -58,7 +58,7 @@ The blog is using [Giscus](https://giscus.app/) comments system which is powered
 ## Contact me
 
 If you have any questions about this repo, feel free to e-mail me: wu-junhui@foxmail.com  
-Or you may create a [Issues](https://github.com/Wu-JunHui/Wu-JunHui.github.io/issues)
+Or you may create a [Issues](https://github.com/Wu-JunHui/Wu-JunHui.github.io/issues).
 
 ## Open source license
 

@@ -7,7 +7,7 @@ tag:
   - 版本控制
 ---
 
-# 基于 Git 的版本控制基本流程 
+# 基于 Git 的版本控制基本流程
 
 ## 前言
 
@@ -155,6 +155,7 @@ git commit -m "init project"
 :::
 
 执行命令成功后，终端会报告本次提交中：
+
 - `数字 file changed`：被改动的文件数量（添加或修改的文件数量）
 - `数字 insertions`：表示在上述文件内插入新内容的行数
 
@@ -200,7 +201,7 @@ ssh-keygen -t ed25519 -C "your_email@example.com"
 ::: info 命令说明
 
 1. Ed25519 是一种算法，若当前设备系统不支持该算法，应使用以下命令创建：  
-<code>ssh-keygen -t rsa -b 4096 -C"用户邮箱地址"</code>（rsa 算法）
+   <code>ssh-keygen -t rsa -b 4096 -C"用户邮箱地址"</code>（rsa 算法）
 2. 命令最后的邮箱地址会被加入到生成的 SSH 密匙中，最初是为了便于辨识，原则上只是一个标识符，并不强制使用具体的邮箱（为方便辨识使用 Github 或 Gitee 账户绑定的邮箱）
    :::
 
@@ -239,7 +240,17 @@ ssh-keygen -t ed25519 -C "your_email@example.com"
 
 因此，可通过以下两种方法获取 <code>SSH 公钥</code>：
 
-（1）在 SSH 密匙默认保存路径 `C:\Users\Administrator\.ssh` 下，通过**记事本**或 **VSCode** 打开 <code>id_ed25519.pub</code> 公钥文件，复制公钥内容  
+（1）在 SSH 密匙默认保存路径 `C:\Users\Administrator\.ssh` 下，通过**记事本**或 **VSCode** 打开 <code>id_ed25519.pub</code> 公钥文件，复制公钥内容
+
+::: tip
+Windows 系统**推荐使用 VSCode** 打开秘钥文件，无论是直接拖拉到 VSCode 还是右键 `通过 code 打开`，都不会被系统设置为默认打开程序
+
+如果通过**记事本**打开秘钥文件，可能会将记事本设置为该类型文件的**默认打开程序**，如果你希望恢复原样，可尝试以下方法：  
+（1）桌面上新建一个文本文档后，重命名为 `.exe` 的程序文件，忽视系统 "更改后缀不可用" 的提示  
+（2）右键秘钥文件，`打开方式` → `选择默认程序`，接着选择你刚刚创建的 `.exe` 文件即可，此时秘钥文件会因该 `.exe` 文件不可用而恢复默认的图标
+（3）删除所创建的 `.exe` 文件即可
+:::
+
 （2）打开 <code>Git Bash</code> 终端，执行如下命令来直接查看和复制公钥内容：
 
 ```bash
@@ -248,20 +259,22 @@ cat ~/.ssh/id_ed25519.pub
 
 #### 2.2 添加公钥
 
-**GitHub**：  
-1. 点击头像下拉菜单中的 <code>Settings</code> → 页面左侧菜单栏 <code>Access</code> 中的 <code>SSH and GPG Keys</code> → 点击 <code>New SSH key</code> 按钮创建新的 SSh key  
-2. 在 SSH key 添加页面中：  
-（1）在 <code>Title</code> 文本框中自定义 Key 的名称，来标识这个 key 从何而来  
-（2）将上一步复制的 **SSH 公钥** 粘贴到 <code>Key</code> 文本框后，即可点击 <code>Add SSH key</code>按钮添加 SSH 密匙  
+**GitHub**：
 
- :::info 命名 key
- 假如你有命名困难症，可参考如下命名规则：**平台名_算法名_key类型**  
+1. 点击头像下拉菜单中的 <code>Settings</code> → 页面左侧菜单栏 <code>Access</code> 中的 <code>SSH and GPG Keys</code> → 点击 <code>New SSH key</code> 按钮创建新的 SSh key
+2. 在 SSH key 添加页面中：  
+   （1）在 <code>Title</code> 文本框中自定义 Key 的名称，来标识这个 key 从何而来  
+   （2）将上一步复制的 **SSH 公钥** 粘贴到 <code>Key</code> 文本框后，即可点击 <code>Add SSH key</code>按钮添加 SSH 密匙
+
+:::info 命名 key
+假如你有命名困难症，可参考如下命名规则：**平台名\_算法名\_key 类型**  
  例如：`GITHUB_ED25519_PUBLIC`、`GITEE_RSA_PUBLIC`
- :::  
+:::  
 3. 此时页面跳转至 GitHub 账号密码输入页面，以确保操作安全性，输入后则成功添加公钥
 
-**Gitee**：  
-1. 点击头像下拉菜单中的 <code>设置</code> → 页面左侧菜单栏 <code>安全设置</code> 中的 <code>SSH 公钥</code>，直接进入添加 SSH key 页面  
+**Gitee**：
+
+1. 点击头像下拉菜单中的 <code>设置</code> → 页面左侧菜单栏 <code>安全设置</code> 中的 <code>SSH 公钥</code>，直接进入添加 SSH key 页面
 2. 在 SSH key 添加页面中，将上一步复制的 **SSH 公钥** 直接复制到 `公匙` 文本框中后，其标题将自动生成（默认为公钥中的邮箱地址）
 3. 点击确定后，再通过登录密码验证后即成功添加公钥
 
@@ -444,5 +457,6 @@ git branch
 ```
 
 ## 参考
+
 [Git 软件教程](https://mrhope.site/software/git/)（由 vuepress-theme-hope 主题作者编写）  
 [Git 官网指南](https://git-scm.com/docs)
