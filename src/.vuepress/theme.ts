@@ -43,7 +43,8 @@ export default hopeTheme({
 
       // sidebar
       sidebar: zhSidebar,
-
+      
+      // 设置所有页面的页眉，除首页会被其README.md的frontmatter覆盖
       footer: '专注 &nbsp &nbsp — &nbsp &nbsp 细致 &nbsp &nbsp — &nbsp &nbsp 执着 ',
 
       displayFooter: true,
@@ -55,7 +56,7 @@ export default hopeTheme({
 
       // 若设置了导航栏中的GItHub仓库地址repo选项，会默认全局显示编辑链接，需通过editLink选项覆盖关闭
       // 是否全局展示编辑此页链接，默认true
-      editLink: false,
+      editLink: false
 
       // 是否全局显示页面贡献者，默认true
       // contributors: false
@@ -89,7 +90,7 @@ export default hopeTheme({
 
       // 若设置了导航栏中的GItHub仓库地址repo选项，会默认全局显示编辑链接，需通过editLink选项覆盖关闭
       // 是否全局展示编辑此页链接，默认true
-      editLink: false,
+      editLink: false
 
       // 是否全局显示页面贡献者，默认true
       // contributors: false

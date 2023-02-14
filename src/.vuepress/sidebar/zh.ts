@@ -2,7 +2,8 @@ import { sidebar } from 'vuepress-theme-hope'
 
 export const zhSidebar = sidebar({
   '/': [
-    // "", 空字符串表示主页链接
+    // 空字符串表示主页链接
+    // "", 
     // 侧边栏只能手动设置当前结构，读取项目目录时只能按默认字母排序
     {
       text: 'HTML',

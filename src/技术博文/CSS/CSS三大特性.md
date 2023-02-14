@@ -5,6 +5,7 @@ category:
   - CSS
 tag:
   - CSS特性
+star: true
 ---
 
 # CSS 三大特性

@@ -7,6 +7,7 @@ tag:
   - Deployment
   - GitHub Pages
   - Gitee Pages
+star: true
 ---
 
 # Deployment of my blog

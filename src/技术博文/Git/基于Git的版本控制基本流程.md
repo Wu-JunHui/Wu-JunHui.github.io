@@ -5,6 +5,7 @@ category:
   - Git
 tag:
   - 版本控制
+star: true
 ---
 
 # 基于 Git 的版本控制基本流程

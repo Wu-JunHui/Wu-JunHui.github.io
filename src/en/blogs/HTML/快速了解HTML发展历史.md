@@ -5,6 +5,7 @@ category:
   - HTML
 tag:
   - HTML发展历史
+star: true
 ---
 
 # 快速了解 HTML 发展历史
