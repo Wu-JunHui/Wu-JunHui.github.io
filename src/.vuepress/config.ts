@@ -1,5 +1,7 @@
 import { defineUserConfig } from 'vuepress'
 import theme from './theme.js'
+import { getDirname, path } from '@vuepress/utils'
+const __dirname = getDirname(import.meta.url)
 
 export default defineUserConfig({
   base: '/',
@@ -19,5 +21,9 @@ export default defineUserConfig({
 
   theme,
 
-  shouldPrefetch: false
+  shouldPrefetch: false,
+  // 为Swiper组件创建别名
+  alias: {
+    '@Swiper': path.resolve(__dirname, 'components/Swiper.vue')
+  }
 })
