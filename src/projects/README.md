@@ -19,7 +19,8 @@ logo="/logo.svg"
 repo="https://github.com/Wu-JunHui/backstage" />
 
 <!-- 图片路径基于public/下 -->
-<Swiper :imgUrl="['projects/backstage/loginPage.webp','projects/backstage/homePage.webp','projects/backstage/userPage.webp']" />
+
+<Swiper :imgUrl="['projects/backstage/loginPage.webp','projects/backstage/homePage.webp','projects/backstage/userPage.webp']"></Swiper>
 
 <script setup lang="ts">
 import Swiper from "@Swiper";
@@ -99,4 +100,3 @@ repo="https://github.com/Wu-JunHui/Weather-Forecast" />
 4. 项目中使用 `Less` 编写样式，同时使用了 [阿里巴巴矢量图标库](https://www.iconfont.cn/)
 
 部署于 Gitee pages: https://w-junhui.gitee.io/weather-forecast
-

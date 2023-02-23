@@ -22,8 +22,9 @@ export default defineUserConfig({
   theme,
 
   shouldPrefetch: false,
-  // 为Swiper组件创建别名
+  // 为自定义组件创建别名
   alias: {
-    '@Swiper': path.resolve(__dirname, 'components/Swiper.vue')
+    '@Swiper': path.resolve(__dirname, 'components/Swiper.vue'),
+    '@Circle': path.resolve(__dirname, 'components/Circle.vue')
   }
 })

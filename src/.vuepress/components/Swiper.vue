@@ -3,6 +3,7 @@
     <swiper-slide v-for="item in imgUrl" :key="item"><img :src="getImgSrc(item)" /></swiper-slide>
   </swiper>
 </template>
+
 <script>
 // import Swiper core and required modules
 import { Navigation, Pagination, A11y, Autoplay } from 'swiper'
