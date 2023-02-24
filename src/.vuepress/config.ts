@@ -25,6 +25,6 @@ export default defineUserConfig({
   // 为自定义组件创建别名
   alias: {
     '@Swiper': path.resolve(__dirname, 'components/Swiper.vue'),
-    '@Circle': path.resolve(__dirname, 'components/Circle.vue')
+    '@Circle': path.resolve(__dirname, 'components/Circle.vue'),
   }
 })

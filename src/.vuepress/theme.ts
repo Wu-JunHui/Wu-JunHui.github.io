@@ -107,12 +107,12 @@ export default hopeTheme({
   },
 
   // 加密文件设置
-  // encrypt: {
-  //   config: {
-  //     // '/demo/encrypt.html': ['1234'],
-  //     // '/zh/demo/encrypt.html': ['1234']
-  //   }
-  // },
+  encrypt: {
+    config: {
+      '/resume/': ['wjh'],
+      '/en/resume/': ['wjh']
+    }
+  },
 
   // 主题内置插件设置
   plugins: {

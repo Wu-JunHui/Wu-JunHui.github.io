@@ -72,7 +72,7 @@ const getCircleSpan = (refer, deg) => {
     width: 100%;
     height: 100%;
     text-align: center;
-    font-size: 22px;
+    font-size: 20px;
     font-family: 'Roboto';
     user-select: none;
     border-radius: 50%;
