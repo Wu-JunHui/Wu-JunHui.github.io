@@ -14,7 +14,6 @@ contributors: false
 
 <script setup lang="ts">
 import Circle from "@Circle";
-import BasicInfo from "@BasicInfo";
 </script>
 
 ## 基本信息
