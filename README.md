@@ -21,7 +21,7 @@ The reason why I registered the domain name `outofforbit.com` is because I think
 
 Then you may ask, why is there an extra `F` in the domain name? Well, the answer is very simple. Because `outoforbit.com` has been registered by someone else and I just want to use `.com` only.
 
-Blog deploy in GitHub pages: https://outofforbit.com
+Blog deploy in GitHub pages: https://wu-junhui.github.io
 
 Blog deploy in Gitee pages: https://w-junhui.gitee.io
 
@@ -82,7 +82,7 @@ Or you may create a [Issues](https://github.com/Wu-JunHui/Wu-JunHui.github.io/is
 
 那么你可能会问，为什么域名里多了一个 `F` 呢? 原因很简单，因为 `outoforbit.com` 已经被别人注册了，同时我只想使用 `.com` 后缀
 
-部署于 GitHub pages: https://outofforbit.com
+部署于 GitHub pages: https://wu-junhui.github.io/
 
 部署于 Gitee pages: https://w-junhui.gitee.io
 
